@@ -2,12 +2,13 @@
 using System;
 using System.Linq;
 
-namespace ブロック移植ツール
+namespace TUSBBuildBattle
 {
     class Program
     {
         static void Main(string[] args)
         {
+            // 旧ワールド読み込み
             Console.WriteLine("古いワールドのフォルダをドラッグ&ドロップしてください");
             var oldPath = Console.ReadLine();
             if (!System.IO.Directory.Exists(oldPath))
@@ -15,6 +16,7 @@ namespace ブロック移植ツール
                 Console.WriteLine("ワールドが存在しないため終了します");
             }
 
+            // 新ワールド読み込み
             Console.WriteLine("新しいワールドのフォルダをドラッグ&ドロップしてください");
             var newPath = Console.ReadLine();
             if (!System.IO.Directory.Exists(newPath))
