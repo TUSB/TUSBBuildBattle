@@ -85,6 +85,7 @@ namespace TUSBBuildBattle
 
                                     i++;
 
+                                    // チャンク保存
                                     Console.WriteLine("チャンクを保存しています {0}/{1}", i, count);
                                     newChunk.Save();
 
