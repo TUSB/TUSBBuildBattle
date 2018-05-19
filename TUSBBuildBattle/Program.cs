@@ -66,10 +66,10 @@ namespace TUSBBuildBattle
 
                                             for (int y = 0; y < andLoadAllChunk.Height; y++)
                                             {
-                                                // ID
+                                                // 旧ワールドからID取得
                                                 var id = andLoadAllChunk.GetBlockId(cx, y, cz);
 
-                                                // メタデータ
+                                                // 旧ワールドからメタデータ取得
                                                 var meta = andLoadAllChunk.GetBlockMetadata(cx, y, cz);
 
                                                 // 空気ブロック以外のブロックの場合
